@@ -1,1 +1,34 @@
 
+#include<stdio.h>
+void main()
+{ char ch;
+  int p=239;
+  int b=129;
+  int f=99;
+  int k=179;
+  int s=149;
+  printf("p='pizza'\nb='burger'\nf='french fries'\nk='pasta'\ns='sandwich');
+  printf("enter your choice");
+  scanf("%c",&ch);
+  switch(ch)
+   { case 'p':p=239;
+               printf("p=%d",p);
+               break;
+     case 'b':b=129;
+               printf("b=%d",b);
+               break;
+     case 'f':f=99;
+               printf("f=%d",d);
+               break;
+     case 'k':k=179;
+              printf("k=%d",k);
+              break;
+     case 's':s=149;
+              printf("s=%d",s);
+              break;
+     case 'default': printf("invalid");
+   }
+}
+            
+
+   
