@@ -1,19 +1,20 @@
 #include<stdio.h>
-{ int n1;
-  int n2;
-  int lcm;
-  printf("enter the value of n1");
-  scanf("%d",&n1);
-  printf("enter the value of n2");
-  scanf("%d",&n2);
-  printf("lcm=%d",lcm);
+int lcm(int,int);
+{ int x;
+  int y;
+  
+  printf("enter the value of x");
+  scanf("%d",&x);
+  printf("enter the value of y");
+  scanf("%d",&y);
+  printf("lcm=%d",lcm(x,y));
 }
  int lcm(int a,int b)
  { 
    static int m=0;
    m=m+b;
    if(m%a==0&&m%b==0)
-     return 0;
+     return m;
       return lcm(a,b)
 
    
