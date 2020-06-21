@@ -1,0 +1,39 @@
+#include<stdio.h>
+void main()
+{ int a[3][3];
+  int i;
+  int j;
+  int s;
+  int s1;
+  printf("enter the 9 matrix element of 3*3 matrix");
+  for(i=0;i<3;i++)
+   { for(j=0;j<3;j++)
+     { printf("matrix[%d][%d]:"i,j);
+       scanf("%d",&a[i][j]);
+      }
+    }
+   printf("");
+  for(i=0;i<3;i++)
+   { for(j=0;j<3;j++)
+     { printf("%d"a[i][j]);
+      }
+    
+     printf("\n");
+    }
+   for(i=0;i<3;i++)
+    { for(j=0;j<3;j+)
+      { if(i==j)
+         s+=a[i][j];
+       }
+     }
+   for(i=0;i<3;i++)
+     { for(j=0;j<3;j++)
+       { if(i+j==2)
+         s1+=a[i][j];
+        }
+      }
+  printf("the sum of diagonal elements are %d and %d\n"s,s1);
+  printf("the sum of both diagonal elements are %d",s+s1);
+        
+  }      
+     
