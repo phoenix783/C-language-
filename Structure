@@ -1,0 +1,27 @@
+#include<stdio.h> 
+struct employee
+{ char name[10];
+  int age;
+  int phone_no;
+  int salary;
+ };
+void main()
+{ struct employee record;
+  strcpy(record.name,"John");
+  record.age=23;
+  record.phone_no=9836252728;
+  record.salary=45000;
+  printf("name=%s age%d phone_no=%d salary=%d\n",record.name,record.age,record.phone_no,record.salary);
+  
+  strcpy(record.name,"Paul");
+  record.age=24;
+  record.phone_no=9736528265;
+  record.salary=50000;
+  printf("name=%s age=%d phone_no=%d salary=%d\n",record.name,record.age,record.phone_no,record.salary);
+  
+  strcpy(record.name,"Jones");
+  record.age=25;
+  record.phone_no=9836258267;
+  record.salary=60000;
+  printf("name=%s age =%d phone_no=%d salary=%d",record.name,record.age,record.phone_no,record.salary);
+}
